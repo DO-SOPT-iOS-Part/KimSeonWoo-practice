@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     
     @IBAction func sliderSlide(_ sender: UISlider) {
         let sliderValue = sender.value
-        descriptionLabel.text = String(sliderValue)
+        descriptionLabel.text = String(Int(sliderValue))
     }
     
     @IBAction func loginButtonTap(_ sender: Any) {
