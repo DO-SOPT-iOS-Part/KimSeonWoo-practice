@@ -11,6 +11,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var descriptionAge: UILabel!
+    
+    @IBOutlet weak var descriptionColor: UILabel!
     @IBOutlet weak var mySwitch: UISwitch!
     
     @IBOutlet weak var mySlider: UISlider!
@@ -38,30 +41,32 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func swtichToggled(_ sender: Any) {
+
+    @IBAction func switchToggled(_ sender: Any) {
         if mySwitch.isOn {
-            descriptionLabel.textColor = UIColor.red
+            descriptionColor.textColor = UIColor.green
             self.toggleSwitchStatus = mySwitch.isOn
             print(toggleSwitchStatus)
         }
         else {
-            descriptionLabel.textColor = UIColor.blue
+            descriptionColor.textColor = UIColor.white
             self.toggleSwitchStatus =  mySwitch.isOn
             print(toggleSwitchStatus)
         }
     }
     
-    
-    @IBAction func sliderSlide(_ sender: UISlider) {
-        let sliderValue = sender.value
-        descriptionLabel.text = String(Int(sliderValue))
+    @IBAction func sliderSlide(_ sender: Any) {
+        let sliderValue = String(Int(mySlider.value))
+        descriptionAge.text = "나이: \(sliderValue)"
     }
+
+    
     
     @IBAction func loginButtonTap(_ sender: Any) {
         print("\(idText)\n\(passwordText)")
         pushToResultVC()
+
     }
-    
     func pushToResultVC() {
         guard let resultVC = self.storyboard?.instantiateViewController(identifier: "ResultVC") as? ResultVC else {return}
         resultVC.email = idText
