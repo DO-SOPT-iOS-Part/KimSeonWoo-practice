@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B42A9ED2AECD7B600A9ECB5 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42A9EC2AECD7B600A9ECB5 /* NewViewController.swift */; };
+		0B42A9ED2AECD7B600A9ECB5 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42A9EC2AECD7B600A9ECB5 /* TestViewController.swift */; };
 		0B42A9F02AECD7D300A9ECB5 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0B42A9EF2AECD7D300A9ECB5 /* Then */; };
 		0B42A9F32AECD7DC00A9ECB5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0B42A9F22AECD7DC00A9ECB5 /* SnapKit */; };
 		0B42A9F52AECD7DC00A9ECB5 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 0B42A9F42AECD7DC00A9ECB5 /* SnapKit-Dynamic */; };
+		0B42A9F72AECDCFF00A9ECB5 /* ItemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42A9F62AECDCFF00A9ECB5 /* ItemListTableViewCell.swift */; };
+		0B42A9F92AECE3D300A9ECB5 /* IItemListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42A9F82AECE3D300A9ECB5 /* IItemListData.swift */; };
+		0B42A9FB2AECF04000A9ECB5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42A9FA2AECF04000A9ECB5 /* CollectionViewController.swift */; };
+		0B42A9FD2AECF11300A9ECB5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42A9FC2AECF11300A9ECB5 /* CollectionViewCell.swift */; };
+		0B42A9FF2AECF3FB00A9ECB5 /* ImageCollectionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B42A9FE2AECF3FB00A9ECB5 /* ImageCollectionData.swift */; };
 		0B92BB772ADA6E710087ECF6 /* CheckPalleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B92BB762ADA6E710087ECF6 /* CheckPalleteViewController.swift */; };
 		0B92BB792ADA75230087ECF6 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B92BB782ADA75230087ECF6 /* StackViewController.swift */; };
 		0BCC79FF2ADA5DBF004951BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCC79FE2ADA5DBF004951BD /* AppDelegate.swift */; };
@@ -21,7 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B42A9EC2AECD7B600A9ECB5 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		0B42A9EC2AECD7B600A9ECB5 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		0B42A9F62AECDCFF00A9ECB5 /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
+		0B42A9F82AECE3D300A9ECB5 /* IItemListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IItemListData.swift; sourceTree = "<group>"; };
+		0B42A9FA2AECF04000A9ECB5 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		0B42A9FC2AECF11300A9ECB5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		0B42A9FE2AECF3FB00A9ECB5 /* ImageCollectionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionData.swift; sourceTree = "<group>"; };
 		0B92BB762ADA6E710087ECF6 /* CheckPalleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPalleteViewController.swift; sourceTree = "<group>"; };
 		0B92BB782ADA75230087ECF6 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		0BCC79FB2ADA5DBF004951BD /* kimSeonWoo-seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kimSeonWoo-seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +84,12 @@
 				0BCC7A092ADA5DC1004951BD /* LaunchScreen.storyboard */,
 				0BCC7A0C2ADA5DC1004951BD /* Info.plist */,
 				0B92BB782ADA75230087ECF6 /* StackViewController.swift */,
-				0B42A9EC2AECD7B600A9ECB5 /* NewViewController.swift */,
+				0B42A9EC2AECD7B600A9ECB5 /* TestViewController.swift */,
+				0B42A9F62AECDCFF00A9ECB5 /* ItemListTableViewCell.swift */,
+				0B42A9F82AECE3D300A9ECB5 /* IItemListData.swift */,
+				0B42A9FA2AECF04000A9ECB5 /* CollectionViewController.swift */,
+				0B42A9FC2AECF11300A9ECB5 /* CollectionViewCell.swift */,
+				0B42A9FE2AECF3FB00A9ECB5 /* ImageCollectionData.swift */,
 			);
 			path = "kimSeonWoo-seminar";
 			sourceTree = "<group>";
@@ -158,10 +173,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B42A9FD2AECF11300A9ECB5 /* CollectionViewCell.swift in Sources */,
+				0B42A9FF2AECF3FB00A9ECB5 /* ImageCollectionData.swift in Sources */,
+				0B42A9FB2AECF04000A9ECB5 /* CollectionViewController.swift in Sources */,
 				0BCC7A032ADA5DBF004951BD /* ViewController.swift in Sources */,
+				0B42A9F72AECDCFF00A9ECB5 /* ItemListTableViewCell.swift in Sources */,
 				0BCC79FF2ADA5DBF004951BD /* AppDelegate.swift in Sources */,
+				0B42A9F92AECE3D300A9ECB5 /* IItemListData.swift in Sources */,
 				0B92BB792ADA75230087ECF6 /* StackViewController.swift in Sources */,
-				0B42A9ED2AECD7B600A9ECB5 /* NewViewController.swift in Sources */,
+				0B42A9ED2AECD7B600A9ECB5 /* TestViewController.swift in Sources */,
 				0B92BB772ADA6E710087ECF6 /* CheckPalleteViewController.swift in Sources */,
 				0BCC7A012ADA5DBF004951BD /* SceneDelegate.swift in Sources */,
 			);
