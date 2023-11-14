@@ -18,13 +18,17 @@ class ResultVC: UIViewController {
     
     @IBOutlet weak var passwordLabel: UILabel!
 
+    @IBOutlet weak var switchLabel: UILabel!
     
     var email: String = ""
     var password: String = ""
+    var switchStatus: String = ""
 
     private func bindText() {
             self.emailLabel.text = "email : \(email)"
         self.passwordLabel.text = "password : \(password)"
+        self.switchLabel.text = "switch : \(switchStatus)"
+        
     }
 
     override func viewDidLoad() {
@@ -35,9 +39,11 @@ class ResultVC: UIViewController {
     }
     
     func setLabelText(id: String,
-                          password: String) {
+                          password: String,
+                      switchStatus: String) {
         self.email = id
         self.password = password
+        self.switchStatus = switchStatus
     }
     
 
@@ -48,10 +54,10 @@ class ResultVC: UIViewController {
                 self.dismiss(animated: true)
             }
         delegate?.getLoginData(email: self.email,
-                               password: self.password)
+                               password: self.password, switchStatus: self.switchStatus)
         
         guard let loginDataCompletion else {return}
-         loginDataCompletion([self.email, self.password])
+        loginDataCompletion([self.email, self.password, self.switchStatus])
     }
     /*
     // MARK: - Navigation
