@@ -5,6 +5,7 @@ import Lottie
 
 class PanGestureTapVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     private let values: [String] = ["A","B","C","D","E","F","G","H","I"]
+    private let headerView = HomePlaceSectionHeaderView()
     var textLabel: UILabel = {
         let textLabel = UILabel()
         textLabel.text = "hi"
@@ -37,21 +38,24 @@ class PanGestureTapVC: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         print("row: \(row)")
         print("value: \(values[row])")
         textLabel.text = values[row]
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setLayout()
-
+        print("load")
         view.backgroundColor = .white
     }
     
     private func setLayout() {
+        headerView.delegate = self
+        
         self.view.addSubview(lottieView)
         self.view.addSubview(imageView)
         self.view.addSubview(pickerView)
-        self.view.addSubview(textLabel)
+        self.view.addSubview(headerView)
         imageView.snp.makeConstraints {
             $0.centerX.centerY.equalToSuperview()
             $0.width.height.equalTo(100)
@@ -64,10 +68,10 @@ class PanGestureTapVC: UIViewController, UIPickerViewDataSource, UIPickerViewDel
             $0.bottom.leading.trailing.equalToSuperview()
             $0.height.equalTo(200)
         }
-        textLabel.snp.makeConstraints {
-            $0.top.leading.trailing.equalTo(100)
+        headerView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.height.equalTo(50)
+            $0.height.equalTo(300)
+            $0.width.equalTo(300)
         }
     }
     
@@ -110,4 +114,12 @@ class PanGestureTapVC: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         $0.addGestureRecognizer(gesture)
     }
     
+}
+
+extension PanGestureTapVC: HomeViewPushDelegate {
+    func didTapButton() {
+        let placeViewController = ResultVC()
+        self.navigationController?.pushViewController(placeViewController, animated: true)
+        NPToast.show(message: "toast")
+    }
 }

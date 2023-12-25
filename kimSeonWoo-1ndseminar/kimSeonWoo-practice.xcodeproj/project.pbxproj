@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B00E7812AD141EF0094C317 /* GetDatatProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B00E7802AD141EF0094C317 /* GetDatatProtocol.swift */; };
+		0B3AC5F72B39161F0080B877 /* ViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AC5F62B39161F0080B877 /* ViewHeader.swift */; };
+		0B3AC5F92B391FBA0080B877 /* NPToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AC5F82B391FBA0080B877 /* NPToast.swift */; };
+		0B3AC5FB2B391FD40080B877 /* NPToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3AC5FA2B391FD40080B877 /* NPToastView.swift */; };
 		0B53A2F42B11A56E00FE56D7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53A2F32B11A56E00FE56D7 /* TestViewController.swift */; };
 		0B53A2F62B11ADF600FE56D7 /* loadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53A2F52B11ADF600FE56D7 /* loadingViewController.swift */; };
 		0B53A2F92B11B90700FE56D7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0B53A2F82B11B90700FE56D7 /* Lottie */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		0B00E7802AD141EF0094C317 /* GetDatatProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDatatProtocol.swift; sourceTree = "<group>"; };
+		0B3AC5F62B39161F0080B877 /* ViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeader.swift; sourceTree = "<group>"; };
+		0B3AC5F82B391FBA0080B877 /* NPToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPToast.swift; sourceTree = "<group>"; };
+		0B3AC5FA2B391FD40080B877 /* NPToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPToastView.swift; sourceTree = "<group>"; };
 		0B53A2F32B11A56E00FE56D7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		0B53A2F52B11ADF600FE56D7 /* loadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingViewController.swift; sourceTree = "<group>"; };
 		0B53A2FA2B11BA6600FE56D7 /* PanGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +119,9 @@
 				0B53A2FC2B11BBF700FE56D7 /* dragAnimation.json */,
 				0B9598A62AFF658E00ABCB5E /* GetCheckDouble.swift */,
 				0B53A2FA2B11BA6600FE56D7 /* PanGestureViewController.swift */,
+				0B3AC5F82B391FBA0080B877 /* NPToast.swift */,
+				0B3AC5FA2B391FD40080B877 /* NPToastView.swift */,
+				0B3AC5F62B39161F0080B877 /* ViewHeader.swift */,
 				0B9598A82AFF65D400ABCB5E /* UserNameDataModel.swift */,
 				0B53A2F32B11A56E00FE56D7 /* TestViewController.swift */,
 				0B53A2F52B11ADF600FE56D7 /* loadingViewController.swift */,
@@ -210,13 +219,16 @@
 				0B53A2F62B11ADF600FE56D7 /* loadingViewController.swift in Sources */,
 				0B9598932AFF588A00ABCB5E /* NetworkError.swift in Sources */,
 				0B9598972AFF58AC00ABCB5E /* RegisterRequestBody.swift in Sources */,
+				0B3AC5F72B39161F0080B877 /* ViewHeader.swift in Sources */,
 				0B9598A12AFF596000ABCB5E /* InfoViewViewController.swift in Sources */,
+				0B3AC5F92B391FBA0080B877 /* NPToast.swift in Sources */,
 				0BDF302E2AD135FA007A3661 /* ResultVC.swift in Sources */,
 				0B9598A72AFF658E00ABCB5E /* GetCheckDouble.swift in Sources */,
 				0B9598912AFF583100ABCB5E /* SignInViewController.swift in Sources */,
 				0BDA39B52AD1221D00A49118 /* AppDelegate.swift in Sources */,
 				0B53A2F42B11A56E00FE56D7 /* TestViewController.swift in Sources */,
 				0B9598A32AFF597400ABCB5E /* GetInfoService.swift in Sources */,
+				0B3AC5FB2B391FD40080B877 /* NPToastView.swift in Sources */,
 				0BDA39B72AD1221D00A49118 /* SceneDelegate.swift in Sources */,
 				0B9598952AFF589C00ABCB5E /* RegisterService.swift in Sources */,
 				0B00E7812AD141EF0094C317 /* GetDatatProtocol.swift in Sources */,
