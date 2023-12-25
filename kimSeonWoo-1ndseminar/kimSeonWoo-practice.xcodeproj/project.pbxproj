@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0B00E7812AD141EF0094C317 /* GetDatatProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B00E7802AD141EF0094C317 /* GetDatatProtocol.swift */; };
+		0B53A2F42B11A56E00FE56D7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53A2F32B11A56E00FE56D7 /* TestViewController.swift */; };
+		0B53A2F62B11ADF600FE56D7 /* loadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53A2F52B11ADF600FE56D7 /* loadingViewController.swift */; };
+		0B53A2F92B11B90700FE56D7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 0B53A2F82B11B90700FE56D7 /* Lottie */; };
+		0B53A2FB2B11BA6600FE56D7 /* PanGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53A2FA2B11BA6600FE56D7 /* PanGestureViewController.swift */; };
+		0B53A2FD2B11BBF700FE56D7 /* dragAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B53A2FC2B11BBF700FE56D7 /* dragAnimation.json */; };
 		0B9598912AFF583100ABCB5E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9598902AFF583100ABCB5E /* SignInViewController.swift */; };
 		0B9598932AFF588A00ABCB5E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9598922AFF588A00ABCB5E /* NetworkError.swift */; };
 		0B9598952AFF589C00ABCB5E /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9598942AFF589C00ABCB5E /* RegisterService.swift */; };
@@ -31,6 +36,10 @@
 
 /* Begin PBXFileReference section */
 		0B00E7802AD141EF0094C317 /* GetDatatProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDatatProtocol.swift; sourceTree = "<group>"; };
+		0B53A2F32B11A56E00FE56D7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		0B53A2F52B11ADF600FE56D7 /* loadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingViewController.swift; sourceTree = "<group>"; };
+		0B53A2FA2B11BA6600FE56D7 /* PanGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureViewController.swift; sourceTree = "<group>"; };
+		0B53A2FC2B11BBF700FE56D7 /* dragAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dragAnimation.json; sourceTree = "<group>"; };
 		0B9598902AFF583100ABCB5E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0B9598922AFF588A00ABCB5E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		0B9598942AFF589C00ABCB5E /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
@@ -59,6 +68,7 @@
 				0B95989A2AFF58E800ABCB5E /* SnapKit in Frameworks */,
 				0B95989F2AFF58EF00ABCB5E /* Then in Frameworks */,
 				0B95989C2AFF58E800ABCB5E /* SnapKit-Dynamic in Frameworks */,
+				0B53A2F92B11B90700FE56D7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +110,12 @@
 				0B9598A02AFF596000ABCB5E /* InfoViewViewController.swift */,
 				0B9598A22AFF597400ABCB5E /* GetInfoService.swift */,
 				0B9598A42AFF598800ABCB5E /* UserDataModel.swift */,
+				0B53A2FC2B11BBF700FE56D7 /* dragAnimation.json */,
 				0B9598A62AFF658E00ABCB5E /* GetCheckDouble.swift */,
+				0B53A2FA2B11BA6600FE56D7 /* PanGestureViewController.swift */,
 				0B9598A82AFF65D400ABCB5E /* UserNameDataModel.swift */,
+				0B53A2F32B11A56E00FE56D7 /* TestViewController.swift */,
+				0B53A2F52B11ADF600FE56D7 /* loadingViewController.swift */,
 			);
 			path = "kimSeonWoo-practice";
 			sourceTree = "<group>";
@@ -126,6 +140,7 @@
 				0B9598992AFF58E800ABCB5E /* SnapKit */,
 				0B95989B2AFF58E800ABCB5E /* SnapKit-Dynamic */,
 				0B95989E2AFF58EF00ABCB5E /* Then */,
+				0B53A2F82B11B90700FE56D7 /* Lottie */,
 			);
 			productName = "kimSeonWoo-practice";
 			productReference = 0BDA39B12AD1221D00A49118 /* kimSeonWoo-practice.app */;
@@ -158,6 +173,7 @@
 			packageReferences = (
 				0B9598982AFF58E800ABCB5E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				0B95989D2AFF58EF00ABCB5E /* XCRemoteSwiftPackageReference "Then" */,
+				0B53A2F72B11B90700FE56D7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 0BDA39B22AD1221D00A49118 /* Products */;
 			projectDirPath = "";
@@ -173,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B53A2FD2B11BBF700FE56D7 /* dragAnimation.json in Resources */,
 				0BDA39C12AD1221E00A49118 /* LaunchScreen.storyboard in Resources */,
 				0BDA39BE2AD1221E00A49118 /* Assets.xcassets in Resources */,
 				0BDA39BC2AD1221D00A49118 /* Main.storyboard in Resources */,
@@ -188,7 +205,9 @@
 			files = (
 				0B9598A52AFF598800ABCB5E /* UserDataModel.swift in Sources */,
 				0B9598A92AFF65D400ABCB5E /* UserNameDataModel.swift in Sources */,
+				0B53A2FB2B11BA6600FE56D7 /* PanGestureViewController.swift in Sources */,
 				0BDA39B92AD1221D00A49118 /* ViewController.swift in Sources */,
+				0B53A2F62B11ADF600FE56D7 /* loadingViewController.swift in Sources */,
 				0B9598932AFF588A00ABCB5E /* NetworkError.swift in Sources */,
 				0B9598972AFF58AC00ABCB5E /* RegisterRequestBody.swift in Sources */,
 				0B9598A12AFF596000ABCB5E /* InfoViewViewController.swift in Sources */,
@@ -196,6 +215,7 @@
 				0B9598A72AFF658E00ABCB5E /* GetCheckDouble.swift in Sources */,
 				0B9598912AFF583100ABCB5E /* SignInViewController.swift in Sources */,
 				0BDA39B52AD1221D00A49118 /* AppDelegate.swift in Sources */,
+				0B53A2F42B11A56E00FE56D7 /* TestViewController.swift in Sources */,
 				0B9598A32AFF597400ABCB5E /* GetInfoService.swift in Sources */,
 				0BDA39B72AD1221D00A49118 /* SceneDelegate.swift in Sources */,
 				0B9598952AFF589C00ABCB5E /* RegisterService.swift in Sources */,
@@ -424,6 +444,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0B53A2F72B11B90700FE56D7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.3;
+			};
+		};
 		0B9598982AFF58E800ABCB5E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -443,6 +471,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0B53A2F82B11B90700FE56D7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B53A2F72B11B90700FE56D7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		0B9598992AFF58E800ABCB5E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0B9598982AFF58E800ABCB5E /* XCRemoteSwiftPackageReference "SnapKit" */;
