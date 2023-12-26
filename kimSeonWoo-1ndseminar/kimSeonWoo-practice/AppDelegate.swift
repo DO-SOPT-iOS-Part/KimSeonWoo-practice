@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import KakaoSDKCommon
+import KakaoSDKAuth
+import Alamofire
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,9 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        KakaoSDK.initSDK(appKey: "0f2b8df52493af05ecf69c630abd291a")
+//        KakaoSDK.initSDK(appKey: "${NATIVE_APP_KEY}")
         // Override point for customization after application launch.
         return true
     }
+  
 
     // MARK: UISceneSession Lifecycle
 

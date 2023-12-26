@@ -1,8 +1,9 @@
 import UIKit
-import SnapKit
+import KakaoSDKUser
 import Then
 import Lottie
-
+import Alamofire
+    
 class PanGestureTapVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     private let values: [String] = ["A","B","C","D","E","F","G","H","I"]
     private let headerView = HomePlaceSectionHeaderView()
@@ -118,8 +119,19 @@ class PanGestureTapVC: UIViewController, UIPickerViewDataSource, UIPickerViewDel
 
 extension PanGestureTapVC: HomeViewPushDelegate {
     func didTapButton() {
-        let placeViewController = ResultVC()
-        self.navigationController?.pushViewController(placeViewController, animated: true)
-        NPToast.show(message: "toast")
-    }
+            // 카카오톡 설치 여부 확인
+            if (UserApi.isKakaoTalkLoginAvailable()) {
+                UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+                    if let error = error {
+                        print(error)
+                    }
+                    else {
+                        print("loginWithKakaoTalk() success.")
+
+                        //do something
+                        _ = oauthToken
+                    }
+                }
+            }
+        }
 }
